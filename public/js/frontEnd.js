@@ -1,9 +1,17 @@
+// menu----------------------------------------------------
 $('#id-menu-nav-header').click(function() {
     $("#navbarMenu").toggleClass('active-menu-mobile ');
 });
 $('#btnCloseMenuHeader').click(function() {
     $("#navbarMenu").toggleClass('active-menu-mobile ');
 });
+
+
+// format price----------------------------------------------
+var getValuePrice = $(".priceFormat").data('value');
+var txtPrice = (getValuePrice).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+$(".priceFormat").html(txtPrice + 'vnđ');
+// set height----------------------------------------------
 
 function menuMobile() {
     var windowH_1 = $('.active-menu-mobile').prop('scrollHeight');
@@ -16,18 +24,32 @@ function menuMobile() {
 
 
 }
-var getValuePrice = $(".priceFormat").data('value');
-var txtPrice = (getValuePrice).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
-$(".priceFormat").html(txtPrice + 'vnđ');
 menuMobile();
 
 $(document).ready(function() {
     $(window).resize(function() {
         menuMobile();
     });
+    // scroll top---------------------------------------------
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 20) {
+            $('#btnGoTop').fadeIn();
+        } else {
+            $('#btnGoTop').fadeOut();
+        }
+    });
+    $('#btnGoTop').click(function() {
+        // $('#btnGoTop').tooltip('hide', 800);
+        $('body,html').animate({
+            scrollTop: 0
+        }, 1000);
+        return false;
+    });
 
+    // $('#btnGoTop').tooltip('show', 800);
 });
 
+// page home---------------------------------------------
 var swiperHome = new Swiper('.swiperHome', {
     slidesPerView: 3,
     spaceBetween: 30,
