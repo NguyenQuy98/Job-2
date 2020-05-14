@@ -1041,4 +1041,91 @@ body {
             }
         }
     }
+    .pageHome {
+        .box-1 {
+            .row {
+                .item:nth-child(2) {
+                    border-left: none;
+                    border-right: none;
+                }
+            }
+        }
+        .box-2 {
+            .boxContent {
+                .item {
+                    margin-bottom: 10px;
+                    padding: 0;
+                    .box-item {
+                        .description {
+                            .nameProduct {
+                                overflow: hidden;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .box-4 {
+            .txtNameTitel {
+                margin-top: 15px;
+                .btnAll {
+                    float: none;
+                }
+            }
+        }
+        .box-5 {
+            .boxContent {
+                .box-item-2 {
+                    .box-item-img {
+                        .col-6 {
+                            margin-bottom: 0;
+                        }
+                        .col-6:nth-child(n + 1) {
+                            padding-left: 7.5px;
+                            margin-top: 15px;
+                        }
+                        .col-6:nth-child(2n + 1) {
+                            padding-right: 7.5px;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        .fixed_menu {
+            top: unset;
+            width: 100%;
+            bottom: 0;
+            right: 0;
+            -webkit-transform: translate(0, 0);
+            -moz-transform: translate(0, 0);
+            -o-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+            ul {
+                li {
+                    width: calc( 100% / 3);
+                    margin-bottom: -2px;
+                    display: inline-block;
+                    margin-right: -5px;
+                    .linkSocial {
+                        width: 100%;
+                        height: 40px;
+                        -webkit-border-radius: 0;
+                        -moz-border-radius: 0;
+                        border-radius: 0;
+                    }
+                    #btnGoTop {
+                        display: none !important;
+                    }
+                    #btnGoTopMobile {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }
