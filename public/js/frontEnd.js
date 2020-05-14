@@ -73,7 +73,7 @@ var swiperHome = new Swiper('.swiperHome', {
             slidesPerView: 2,
             spaceBetween: 20,
         },
-        768: {
+        1024: {
             slidesPerView: 2,
             spaceBetween: 20,
         },
@@ -102,9 +102,9 @@ var swiperBox6 = new Swiper('.swiperBox-6', {
             slidesPerView: 2,
             spaceBetween: 20,
         },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 30,
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 20,
         },
     }
 });
