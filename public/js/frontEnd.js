@@ -19,8 +19,14 @@ function menuMobile() {
     if (windowH_1 > windowH_2) {
         $('#navbarMenu').css({
             'height': 'max-content',
-        })
+        });
     }
+
+    // var windowSwiper = $('.pageTourTravel .swiper-slide').width();
+    // $('.pageTourTravel .swiper-slide').css({
+    //     'width': windowSwiper + 15,
+    //     'margin-right': -15,
+    // });
 
 
 }
@@ -53,11 +59,11 @@ $(document).ready(function() {
 var swiperHome = new Swiper('.swiperHome', {
     slidesPerView: 3,
     spaceBetween: 30,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-        stopOnLast: true,
-    },
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    //     stopOnLast: true,
+    // },
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {

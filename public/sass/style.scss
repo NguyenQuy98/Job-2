@@ -824,6 +824,22 @@ body {
     }
     .box-4 {
         .boxContent {
+            .row {
+                margin: 0 -7.5px;
+            }
+            .colBox {
+                padding-left: 7.5px;
+                padding-right: 7.5px;
+            }
+            // .colBox:nth-child(3n + 1) {
+            //     padding-right: 7.5px;
+            //     padding-left: 0;
+            // }
+            // .colBox:nth-child(4n) {
+            //     padding-right: 0;
+            //     padding-left: 7.5px;
+            //     ;
+            // }
             .box-item-content {
                 .box-desc {
                     .box-content {
@@ -1047,7 +1063,7 @@ body {
                 left: 0;
                 background: #fff;
                 width: 0;
-                height: 100vh;
+                height: calc(100vh + 15px);
                 opacity: 0;
                 visibility: hidden;
                 -webkit-transition: all 0.5s ease;
@@ -1181,6 +1197,13 @@ body {
 }
 
 @media all and (max-width: 450px) {
+    .header {
+        .box-menu {
+            .menu-mobile {
+                height: 100vh;
+            }
+        }
+    }
     .bannerHome {
         .searchForm {
             .btnSearch {
@@ -1299,6 +1322,17 @@ body {
             }
         }
     }
+    .pageTourTravel {
+        .box-4 {
+            .boxContent {
+                .row {
+                    .col-md-6.colBox {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
     .footer {
         margin-bottom: 40px;
         .box-bottom-footer {
@@ -1366,6 +1400,20 @@ body {
                             font-size: 13px;
                         }
                     }
+                }
+            }
+        }
+    }
+    .pageTourTravel {
+        .box-3,
+        .box-5,
+        .box-6 {
+            .txtNameTitel {
+                span:nth-child(1) {
+                    font-size: 20px;
+                }
+                span:nth-child(2) {
+                    margin-top: 5px;
                 }
             }
         }
