@@ -761,6 +761,43 @@ body {
   color: #fff;
 }
 
+.pageTourTravel .box-3 {
+  margin-top: 20px;
+}
+.pageTourTravel .box-3 .txtNameTitel span:nth-child(1) {
+  font-size: 30px;
+}
+.pageTourTravel .box-3 .txtNameTitel span:nth-child(2) {
+  margin-top: 15px;
+}
+.pageTourTravel .box-4 .boxContent .box-item-content .box-desc .box-content .textDescBox {
+  width: 100%;
+}
+.pageTourTravel .box-4 .boxContent .box-item-content .ribbon .rib {
+  font-weight: 500;
+}
+.pageTourTravel .box-4 .boxContent .box-item-content .ribbon .rib.bgRedVisa {
+  background-color: #ff0000;
+  border-color: #ff0000;
+}
+.pageTourTravel .box-4 .boxContent .box-item-content .ribbon .rib.bgYellowVisa {
+  background-color: #ffbf00;
+  border-color: #ffbf00;
+}
+.pageTourTravel .box-4 .boxContent .box-item-content .box-price {
+  font-size: 20px;
+  color: #d82727;
+  font-weight: bold;
+}
+.pageTourTravel .box-5 .txtNameTitel span:nth-child(1),
+.pageTourTravel .box-6 .txtNameTitel span:nth-child(1) {
+  font-size: 30px;
+}
+.pageTourTravel .box-5 .txtNameTitel span:nth-child(2),
+.pageTourTravel .box-6 .txtNameTitel span:nth-child(2) {
+  margin-top: 15px;
+}
+
 .footer .contentFooter .box-top-footer .nameTitel {
   text-transform: uppercase;
   font-size: 18px;

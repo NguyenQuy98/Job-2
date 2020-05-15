@@ -810,6 +810,62 @@ body {
 // page ----------------------
 .page-warp {}
 
+.pageTourTravel {
+    .box-3 {
+        margin-top: 20px;
+        .txtNameTitel {
+            span:nth-child(1) {
+                font-size: 30px;
+            }
+            span:nth-child(2) {
+                margin-top: 15px;
+            }
+        }
+    }
+    .box-4 {
+        .boxContent {
+            .box-item-content {
+                .box-desc {
+                    .box-content {
+                        .textDescBox {
+                            width: 100%;
+                        }
+                    }
+                }
+                .ribbon {
+                    .rib {
+                        font-weight: 500;
+                    }
+                    .rib.bgRedVisa {
+                        background-color: #ff0000;
+                        border-color: #ff0000;
+                    }
+                    .rib.bgYellowVisa {
+                        background-color: #ffbf00;
+                        border-color: #ffbf00;
+                    }
+                }
+                .box-price {
+                    font-size: 20px;
+                    color: #d82727;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .box-5,
+    .box-6 {
+        .txtNameTitel {
+            span:nth-child(1) {
+                font-size: 30px;
+            }
+            span:nth-child(2) {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
 //footer -------------------------
 .footer {
     .contentFooter {
