@@ -1,3 +1,5 @@
+// animate
+AOS.init();
 // menu----------------------------------------------------
 $('#id-menu-nav-header').click(function() {
     $("#navbarMenu").toggleClass('active-menu-mobile ');
@@ -55,7 +57,7 @@ $(document).ready(function() {
 // page home---------------------------------------------
 var swiperHome = new Swiper('.swiperHome', {
     slidesPerView: 3,
-    spaceBetween: 15,
+    spaceBetween: 0,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
@@ -70,15 +72,15 @@ var swiperHome = new Swiper('.swiperHome', {
     breakpoints: {
         450: {
             slidesPerView: 1,
-            spaceBetween: 15,
+            spaceBetween: 0,
         },
         640: {
             slidesPerView: 2,
-            spaceBetween: 15,
+            spaceBetween: 0,
         },
         1024: {
             slidesPerView: 2,
-            spaceBetween: 15,
+            spaceBetween: 0,
         },
     }
 });
@@ -99,7 +101,36 @@ var swiperBox6 = new Swiper('.swiperBox-6', {
     breakpoints: {
         450: {
             slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        640: {
+            slidesPerView: 2,
             spaceBetween: 15,
+        },
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+    }
+});
+var swiperVisa = new Swiper('.swiperVisa', {
+    slidesPerView: 4,
+    spaceBetween: 15,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        stopOnLast: true,
+    },
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+        nextEl: '.next_visa',
+        prevEl: '.prev_visa',
+    },
+    breakpoints: {
+        450: {
+            slidesPerView: 1,
+            spaceBetween: 0,
         },
         640: {
             slidesPerView: 2,

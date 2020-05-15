@@ -34,7 +34,7 @@ a:hover {
 }
 
 body {
-  background: #e0e7ef;
+  background: #ecf0f5;
 }
 
 .header .box-menu .btnCloseMenuHeader {
@@ -150,33 +150,63 @@ body {
 
 .bannerHome {
   position: relative;
+  overflow: hidden;
+  max-height: 500px;
 }
-.bannerHome img {
+.bannerHome .imgBoxBanner {
   width: 100%;
+  position: relative;
+  background-image: url(/public/images/banner-trang-chu-lhvn9.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-transform: rotate(0deg) scale(1);
+  -moz-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  -webkit-transition: transform 12000ms cubic-bezier(0.44, 0.185, 0.575, 0.86) 0s;
+  -moz-transition: transform 12000ms cubic-bezier(0.44, 0.185, 0.575, 0.86) 0s;
+  -o-transition: transform 12000ms cubic-bezier(0.44, 0.185, 0.575, 0.86) 0s;
+  transition: transform 12000ms cubic-bezier(0.44, 0.185, 0.575, 0.86) 0s;
 }
-.bannerHome .searchForm {
-  width: 80%;
+.bannerHome .imgBoxBanner.active {
+  -webkit-transform: rotate(0.01deg) scale(1.1);
+  -moz-transform: rotate(0.01deg) scale(1.1);
+  -o-transform: rotate(0.01deg) scale(1.1);
+  -ms-transform: rotate(0.01deg) scale(1.1);
+  transform: rotate(0.01deg) scale(1.1);
+}
+.bannerHome a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(223, 249, 251, 0.5);
+}
+.bannerHome a .searchForm {
+  background: rgba(223, 249, 251, 0.8);
   padding: 20px;
 }
-.bannerHome .searchForm input {
+.bannerHome a .searchForm input {
   padding: 16px 15px 16px 35px;
   width: calc(80% - 2px);
   border: none;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
-.bannerHome .searchForm .btnSearch {
+.bannerHome a .searchForm .btnSearch {
   display: inline-block;
   padding: 15px;
   text-align: center;
   width: calc(20% - 2px);
   background: #95afc0;
-  color: #535c68;
+  color: #d82727;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   font-size: 18px;
@@ -222,7 +252,7 @@ body {
   border-right: 1px solid #ccc;
 }
 .pageHome .box-2 .txtNameTitel {
-  font-size: 18px;
+  font-size: 20px;
   color: #535c68;
   margin-bottom: 20px;
 }
@@ -248,6 +278,7 @@ body {
   grid-column: 3;
   padding: 10px;
   position: relative;
+  background: rgba(246, 254, 255, 0.8);
 }
 .pageHome .box-2 .boxContent .item .box-item .description .nameProduct {
   font-size: 13px;
@@ -282,7 +313,7 @@ body {
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 20px;
   color: #535c68;
   font-weight: 500;
 }
@@ -297,10 +328,14 @@ body {
 }
 .pageHome .box-3 .boxContent {
   position: relative;
+  margin: 0 -10px;
 }
 .pageHome .box-3 .boxContent .swiper-container {
   width: 100%;
   height: 100%;
+}
+.pageHome .box-3 .boxContent .swiper-container .swiper-slide {
+  padding: 0 10px;
 }
 .pageHome .box-3 .boxContent .box-item-content {
   position: relative;
@@ -330,7 +365,7 @@ body {
 }
 .pageHome .box-3 .boxContent .box-item-content .box-desc {
   padding: 15px;
-  background: #dcdde1;
+  background: rgba(246, 254, 255, 0.8);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -360,6 +395,9 @@ body {
   -ms-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
+.pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .textDescBox.visa {
+  width: 100%;
+}
 .pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .box-right {
   position: absolute;
   bottom: 0;
@@ -374,7 +412,7 @@ body {
 .pageHome .box-3 .boxContent .box-item-content .ribbon {
   position: absolute;
   top: 10px;
-  left: 5px;
+  left: -9px;
   pointer-events: none;
 }
 .pageHome .box-3 .boxContent .box-item-content .ribbon .rib {
@@ -433,15 +471,23 @@ body {
   align-items: center;
 }
 .pageHome .box-3 .boxContent .next_item {
-  right: -20px;
+  right: -10px;
 }
 .pageHome .box-3 .boxContent .prev_item {
-  left: -20px;
+  left: -10px;
 }
 .pageHome .box-3 .boxContent .prev_item:hover,
-.pageHome .box-3 .boxContent .next_item:hover {
+.pageHome .box-3 .boxContent .next_item:hover,
+.pageHome .box-3 .boxContent .next_visa:hover,
+.pageHome .box-3 .boxContent .prev_visa:hover {
   background: #d82727;
   color: #fff;
+}
+.pageHome .box-3 .boxContent .next_visa {
+  right: -10px;
+}
+.pageHome .box-3 .boxContent .prev_visa {
+  left: -10px;
 }
 .pageHome .box-4 .txtNameTitel {
   margin-bottom: 20px;
@@ -483,7 +529,7 @@ body {
 }
 .pageHome .box-4 .boxContent .box-item-content {
   position: relative;
-  background: rgba(246, 254, 255, 0.5);
+  background: rgba(246, 254, 255, 0.8);
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -601,7 +647,7 @@ body {
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 20px;
   color: #535c68;
   font-weight: 500;
 }
@@ -642,7 +688,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(6, 82, 221, 0.5);
+  background: rgba(6, 82, 221, 0.8);
   padding: 10px;
 }
 .pageHome .box-5 .boxContent .box-item-1 a .mapName i {
@@ -683,7 +729,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(6, 82, 221, 0.5);
+  background: rgba(6, 82, 221, 0.8);
   padding: 10px;
 }
 .pageHome .box-5 .boxContent .box-item-2 .box-item-img .col-6 .box-item-col a .mapName i {
@@ -705,7 +751,7 @@ body {
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 20px;
   color: #535c68;
   font-weight: 500;
 }
@@ -741,7 +787,7 @@ body {
   transition: transform 0.8s cubic-bezier(0.44, 0.185, 0.575, 0.86);
 }
 .pageHome .box-6 .boxContent .box-item-content .box-desc {
-  background: #dcdde1;
+  background: rgba(246, 254, 255, 0.8);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 15px;
@@ -1070,6 +1116,13 @@ body {
   .header .box-menu .navbar-nav .menu-main:nth-child(1) {
     margin-left: 0;
   }
+  .header .box-menu .form-inline .box-support .s-title {
+    margin: 0;
+    padding-left: 0;
+    height: unset;
+    border-left: 0;
+    font-size: 12px;
+  }
 
   .bannerHome .searchForm .btnSearch span {
     display: none;
@@ -1077,6 +1130,15 @@ body {
 
   .pageHome .box-1 .row .item .iconBox img {
     width: 50%;
+  }
+  .pageHome .box-3 .boxContent .swiper-slide-active {
+    padding-left: 10px;
+  }
+  .pageHome .box-3 .boxContent .box-item-content .ribbon {
+    left: -10px;
+  }
+  .pageHome .box-3 .boxContent .prev_item {
+    left: -10px;
   }
   .pageHome .box-2 .boxContent {
     margin-bottom: 0;
@@ -1112,12 +1174,15 @@ body {
   .header .box-menu .menu-mobile {
     height: 100vh;
   }
+  .header .box-menu .form-inline .box-support .s-content {
+    width: 90%;
+  }
 
-  .bannerHome .searchForm .btnSearch {
+  .bannerHome a .searchForm .btnSearch {
     padding: 5px 0;
     vertical-align: top;
   }
-  .bannerHome .searchForm input {
+  .bannerHome a .searchForm input {
     vertical-align: top;
     padding: 9px;
     font-size: 13px;
@@ -1135,6 +1200,12 @@ body {
     overflow: hidden;
     height: 40px;
   }
+  .pageHome .box-3 .boxContent {
+    margin-left: -10px;
+  }
+  .pageHome .box-3 .boxContent .swiper-slide-active {
+    padding-left: 0px;
+  }
   .pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .textDescBox {
     width: 100%;
   }
@@ -1147,17 +1218,28 @@ body {
     right: 0;
     bottom: 0;
   }
+  .pageHome .box-3 .boxContent .box-item-content .ribbon {
+    left: -9px;
+  }
   .pageHome .box-3 .boxContent .prev_item {
     left: 0;
   }
-  .pageHome .box-3 .boxContent .next_item {
-    right: 0;
+  .pageHome .box-3 .boxContent .next_visa {
+    right: -5px;
+  }
+  .pageHome .box-3 .boxContent .prev_visa {
+    left: -5px;
   }
   .pageHome .box-4 .txtNameTitel {
     margin-top: 15px;
   }
   .pageHome .box-4 .txtNameTitel .btnAll {
     float: none;
+  }
+  .pageHome .box-4 .boxContent .row .col-md-6,
+.pageHome .box-4 .boxContent .row .col-md-6:nth-child(2n+1),
+.pageHome .box-4 .boxContent .row .col-md-6:nth-child(2n) {
+    padding: 0;
   }
   .pageHome .box-5 .txtNameTitel .btnSee {
     float: none;
@@ -1179,12 +1261,15 @@ body {
     margin-top: 15px;
   }
   .pageHome .box-6 .boxContent .prev_blog {
-    left: -15px;
+    left: -10px;
   }
   .pageHome .box-6 .boxContent .next_blog {
     right: -15px;
   }
 
+  .pageTourTravel .box-3 .boxContent .next_item {
+    right: -5px;
+  }
   .pageTourTravel .box-4 .boxContent .row .col-md-6.colBox {
     padding: 0;
   }
