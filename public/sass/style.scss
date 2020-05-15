@@ -96,6 +96,72 @@ body {
                 color: #ffbe76;
             }
         }
+        .form-inline {
+            .box-support {
+                .s-title {
+                    margin: 10px 25px 10px 0;
+                    padding-left: 20px;
+                    height: 50px;
+                    border-left: 2px solid #ccc;
+                    font-size: 13px;
+                    cursor: pointer;
+                    .n-phone {
+                        font-size: 18px;
+                        line-height: 30px;
+                        font-weight: bold;
+                        color: #d82727;
+                    }
+                }
+                .s-content {
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    width: 370px;
+                    -webkit-border-radius: 6px;
+                    -moz-border-radius: 6px;
+                    border-radius: 6px;
+                    background: #ffffff;
+                    z-index: 10;
+                    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                    opacity: 0;
+                    visibility: hidden;
+                    -webkit-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    -o-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+                    .list-call {
+                        ul {
+                            li {
+                                font-size: 14px;
+                                border-bottom: 1px solid #eeeeee;
+                                .box-li-item {
+                                    padding: 15px;
+                                    a {
+                                        color: #d82727;
+                                    }
+                                    .fl {
+                                        display: inline-block;
+                                    }
+                                    .fr {
+                                        display: inline-block;
+                                        float: right;
+                                    }
+                                }
+                            }
+                            li:nth-last-child(1) {
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                .s-content.active {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
     }
 }
 
@@ -261,14 +327,12 @@ body {
         }
         .boxContent {
             position: relative;
-            margin: 0 -15px;
             .swiper-container {
                 width: 100%;
                 height: 100%;
             }
             .box-item-content {
                 position: relative;
-                padding: 0 15px;
                 .avatar {
                     position: relative;
                     overflow: hidden;
@@ -402,10 +466,10 @@ body {
                 align-items: center;
             }
             .next_item {
-                right: -5px;
+                right: -20px;
             }
             .prev_item {
-                left: -5px;
+                left: -20px;
             }
             .prev_item:hover,
             .next_item:hover {
@@ -456,7 +520,7 @@ body {
         .boxContent {
             .box-item-content {
                 position: relative;
-                background: rgba(#dff9fb, 0.5);
+                background: rgba(#f6feff, 0.5);
                 -webkit-transition: all 0.5s ease;
                 -moz-transition: all 0.5s ease;
                 -o-transition: all 0.5s ease;
@@ -496,7 +560,7 @@ body {
                         -webkit-box-orient: vertical;
                         a {
                             font-weight: bold;
-                            font-size: 20px;
+                            font-size: 18px;
                             -webkit-transition: all 0.5s ease;
                             -moz-transition: all 0.5s ease;
                             -o-transition: all 0.5s ease;
@@ -819,6 +883,17 @@ body {
             }
             span:nth-child(2) {
                 margin-top: 15px;
+            }
+        }
+        .boxContent {
+            .box-item-content {
+                .box-desc {
+                    .box-content {
+                        .textDescBox {
+                            width: 100%;
+                        }
+                    }
+                }
             }
         }
     }

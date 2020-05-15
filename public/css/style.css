@@ -89,6 +89,64 @@ body {
 .header .box-menu .navbar-nav .menu-main a:hover {
   color: #ffbe76;
 }
+.header .box-menu .form-inline .box-support .s-title {
+  margin: 10px 25px 10px 0;
+  padding-left: 20px;
+  height: 50px;
+  border-left: 2px solid #ccc;
+  font-size: 13px;
+  cursor: pointer;
+}
+.header .box-menu .form-inline .box-support .s-title .n-phone {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #d82727;
+}
+.header .box-menu .form-inline .box-support .s-content {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 370px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: #ffffff;
+  z-index: 10;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.header .box-menu .form-inline .box-support .s-content .list-call ul li {
+  font-size: 14px;
+  border-bottom: 1px solid #eeeeee;
+}
+.header .box-menu .form-inline .box-support .s-content .list-call ul li .box-li-item {
+  padding: 15px;
+}
+.header .box-menu .form-inline .box-support .s-content .list-call ul li .box-li-item a {
+  color: #d82727;
+}
+.header .box-menu .form-inline .box-support .s-content .list-call ul li .box-li-item .fl {
+  display: inline-block;
+}
+.header .box-menu .form-inline .box-support .s-content .list-call ul li .box-li-item .fr {
+  display: inline-block;
+  float: right;
+}
+.header .box-menu .form-inline .box-support .s-content .list-call ul li:nth-last-child(1) {
+  border-bottom: 0;
+}
+.header .box-menu .form-inline .box-support .s-content.active {
+  opacity: 1;
+  visibility: visible;
+}
 
 .bannerHome {
   position: relative;
@@ -239,7 +297,6 @@ body {
 }
 .pageHome .box-3 .boxContent {
   position: relative;
-  margin: 0 -15px;
 }
 .pageHome .box-3 .boxContent .swiper-container {
   width: 100%;
@@ -247,7 +304,6 @@ body {
 }
 .pageHome .box-3 .boxContent .box-item-content {
   position: relative;
-  padding: 0 15px;
 }
 .pageHome .box-3 .boxContent .box-item-content .avatar {
   position: relative;
@@ -377,10 +433,10 @@ body {
   align-items: center;
 }
 .pageHome .box-3 .boxContent .next_item {
-  right: -5px;
+  right: -20px;
 }
 .pageHome .box-3 .boxContent .prev_item {
-  left: -5px;
+  left: -20px;
 }
 .pageHome .box-3 .boxContent .prev_item:hover,
 .pageHome .box-3 .boxContent .next_item:hover {
@@ -427,7 +483,7 @@ body {
 }
 .pageHome .box-4 .boxContent .box-item-content {
   position: relative;
-  background: rgba(223, 249, 251, 0.5);
+  background: rgba(246, 254, 255, 0.5);
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -470,7 +526,7 @@ body {
 }
 .pageHome .box-4 .boxContent .box-item-content .box-desc .box-title a {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -769,6 +825,9 @@ body {
 }
 .pageTourTravel .box-3 .txtNameTitel span:nth-child(2) {
   margin-top: 15px;
+}
+.pageTourTravel .box-3 .boxContent .box-item-content .box-desc .box-content .textDescBox {
+  width: 100%;
 }
 .pageTourTravel .box-4 .boxContent .row {
   margin: 0 -7.5px;
