@@ -148,6 +148,24 @@ var swiperVisa = new Swiper('.swiperVisa', {
         },
     }
 });
+var slideInfoD = new Swiper('.slide-infoD', {
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        stopOnLast: true,
+    },
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: '.paginationInfoD',
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: '.next_infoD',
+        prevEl: '.prev_infoD',
+    },
+});
 
 // page category-----------------------------------------
 $('.box-filter-1').click(function() {
@@ -172,4 +190,12 @@ $('.IDBoloc').click(function() {
 });
 $('.IDSapxep').click(function() {
     $(".box-name-title .fr").toggleClass('active');
+});
+
+// detal------------------------------------------
+$('#IDNoteCom').click(function() {
+    $(".formComment .content-info").show("slow");
+});
+$(".content-info .btn-close").click(function() {
+    $(".formComment .content-info").hide(1000);
 });
