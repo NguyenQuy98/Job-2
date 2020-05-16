@@ -199,3 +199,25 @@ $('#IDNoteCom').click(function() {
 $(".content-info .btn-close").click(function() {
     $(".formComment .content-info").hide(1000);
 });
+
+
+// popup đặt hàng---------------------------------
+$(".step").click(function() {
+    $(this).addClass("active").prevAll().addClass("active");
+    $(this).nextAll().removeClass("active");
+});
+
+$(".step01").click(function() {
+    $("#line-progress").css("width", "3%");
+    $(".discovery").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click(function() {
+    $("#line-progress").css("width", "50%");
+    $(".strategy").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click(function() {
+    $("#line-progress").css("width", "100%");
+    $(".creative").addClass("active").siblings().removeClass("active");
+});
