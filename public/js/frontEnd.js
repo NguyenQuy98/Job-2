@@ -13,6 +13,9 @@ $('#btnSupport').click(function() {
 });
 // format price----------------------------------------------
 var getValuePrice = $(".priceFormat").data('value');
+if (typeof(getValuePrice) == "undefined") {
+    getValuePrice = 0;
+}
 var txtPrice = (getValuePrice).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 $(".priceFormat").html(txtPrice + 'vnđ');
 // set height----------------------------------------------
@@ -31,7 +34,10 @@ function menuMobile() {
 }
 menuMobile();
 
+
+
 $(document).ready(function() {
+    $('.bannerHome .imgBoxBanner').toggleClass('active');
     $(window).resize(function() {
         menuMobile();
     });
@@ -141,4 +147,29 @@ var swiperVisa = new Swiper('.swiperVisa', {
             spaceBetween: 15,
         },
     }
+});
+
+// page category-----------------------------------------
+$('.box-filter-1').click(function() {
+    $(".box-filter-1").toggleClass('collapse');
+    $(".box-filter-1").toggleClass('show');
+});
+$('.box-filter-2').click(function() {
+    $(".box-filter-2").toggleClass('collapse');
+    $(".box-filter-2").toggleClass('show');
+});
+$('.box-filter-3').click(function() {
+    $(".box-filter-3").toggleClass('collapse');
+    $(".box-filter-3").toggleClass('show');
+});
+$('.box-filter-4').click(function() {
+    $(".box-filter-4").toggleClass('collapse');
+    $(".box-filter-4").toggleClass('show');
+});
+
+$('.IDBoloc').click(function() {
+    $(".box-content-filter-main .box-filter-l").toggleClass('active');
+});
+$('.IDSapxep').click(function() {
+    $(".box-name-title .fr").toggleClass('active');
 });
