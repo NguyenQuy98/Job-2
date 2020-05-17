@@ -1320,9 +1320,6 @@ body {
   padding-left: 7.5px;
   padding-right: 7.5px;
 }
-.pageTourTravel .box-4 .boxContent .box-item-content .box-desc .box-content .textDescBox {
-  width: 100%;
-}
 .pageTourTravel .box-4 .boxContent .box-item-content .ribbon .rib {
   font-weight: 500;
 }
@@ -1346,6 +1343,36 @@ body {
 .pageTourTravel .box-5 .txtNameTitel span:nth-child(2),
 .pageTourTravel .box-6 .txtNameTitel span:nth-child(2) {
   margin-top: 15px;
+}
+
+.page-visa .box-3 {
+  margin-top: 20px;
+}
+.page-visa .box-3 .boxContent .dateTimeCountVisa i {
+  margin-right: 10px;
+}
+.page-visa .box-3 .boxContent .box-item-content .avatar .mapName i {
+  background: linear-gradient(#FF6900, #FFB000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.page-visa .box-3 .boxContent .box-item-content .box-desc .box-title a {
+  color: #0056b3;
+}
+.page-visa .box-3 .boxContent .box-item-content .box-desc .box-content .box-price {
+  font-size: 20px;
+  color: #d82727;
+  font-weight: bold;
+  text-align: right;
+}
+.page-visa .box-4 .boxContent .dateTimeCountVisa i {
+  margin-right: 10px;
+}
+.page-visa .box-4 .boxContent .box-item-content .box-desc .box-content .textDescBox {
+  width: 100%;
+}
+.page-visa .box-4 .boxContent .box-item-content .box-desc .box-content .box-price {
+  text-align: right;
 }
 
 .pageDetail .bannerDetail-nav {

@@ -1443,13 +1443,13 @@ body {
             //     ;
             // }
             .box-item-content {
-                .box-desc {
-                    .box-content {
-                        .textDescBox {
-                            width: 100%;
-                        }
-                    }
-                }
+                // .box-desc {
+                //     .box-content {
+                //         .textDescBox {
+                //             width: 100%;
+                //         }
+                //     }
+                // }
                 .ribbon {
                     .rib {
                         font-weight: 500;
@@ -1479,6 +1479,66 @@ body {
             }
             span:nth-child(2) {
                 margin-top: 15px;
+            }
+        }
+    }
+}
+
+.page-visa {
+    .box-3 {
+        margin-top: 20px;
+        .boxContent {
+            .dateTimeCountVisa {
+                i {
+                    margin-right: 10px;
+                }
+            }
+            .box-item-content {
+                .avatar {
+                    .mapName {
+                        i {
+                            background: linear-gradient(#FF6900, #FFB000);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                }
+                .box-desc {
+                    .box-title {
+                        a {
+                            color: #0056b3;
+                        }
+                    }
+                    .box-content {
+                        .box-price {
+                            font-size: 20px;
+                            color: #d82727;
+                            font-weight: bold;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .box-4 {
+        .boxContent {
+            .dateTimeCountVisa {
+                i {
+                    margin-right: 10px;
+                }
+            }
+            .box-item-content {
+                .box-desc {
+                    .box-content {
+                        .textDescBox {
+                            width: 100%;
+                        }
+                        .box-price {
+                            text-align: right;
+                        }
+                    }
+                }
             }
         }
     }
