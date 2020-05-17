@@ -41,6 +41,9 @@ body {
   background: #ecf0f5;
 }
 
+.header .box-menu .navbar {
+  padding: 0;
+}
 .header .box-menu .btnCloseMenuHeader {
   opacity: 0;
   visibility: hidden;
@@ -57,6 +60,10 @@ body {
   top: 0;
   left: 0;
   cursor: pointer;
+}
+.header .box-menu .navbar-nav .menu-toggler-nav .navbar-toggler-icon {
+  -webkit-filter: opacity(1) drop-shadow(0 0 0 #000);
+  filter: opacity(1) drop-shadow(0 0 0 #000);
 }
 .header .box-menu .navbar-nav .menu-toggler-nav .menu-toggler-nav-active {
   position: absolute;
@@ -81,7 +88,9 @@ body {
   visibility: visible;
 }
 .header .box-menu .navbar-nav .menu-main a {
-  color: #576574;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -91,7 +100,7 @@ body {
   margin-left: 40px;
 }
 .header .box-menu .navbar-nav .menu-main a:hover {
-  color: #ffbe76;
+  color: #d82727;
 }
 .header .box-menu .form-inline .box-support .s-title {
   margin: 10px 25px 10px 0;
@@ -323,6 +332,7 @@ body {
 }
 .pageHome .box-3 .txtNameTitel .btnSee {
   float: right;
+  font-size: 14px;
 }
 .pageHome .box-3 .txtNameTitel .btnSee i {
   color: #9c1320;
@@ -656,6 +666,7 @@ body {
   font-weight: 500;
 }
 .pageHome .box-5 .txtNameTitel .btnSee {
+  font-size: 14px;
   float: right;
 }
 .pageHome .box-5 .txtNameTitel .btnSee i {
@@ -760,6 +771,7 @@ body {
   font-weight: 500;
 }
 .pageHome .box-6 .txtNameTitel .btnSee {
+  font-size: 14px;
   float: right;
 }
 .pageHome .box-6 .txtNameTitel .btnSee i {
@@ -2384,6 +2396,11 @@ body {
   display: block;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 @media only screen and (max-width: 1024px) and (min-width: 770px) {
   .page-warp .box-content .box-content-filter-main .content-boxR .list-tour .item .tour-detail .box-info .box-price {
     font-size: 18px;

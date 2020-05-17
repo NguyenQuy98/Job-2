@@ -46,6 +46,9 @@ body {
 // header----------------------
 .header {
     .box-menu {
+        .navbar {
+            padding: 0;
+        }
         .btnCloseMenuHeader {
             opacity: 0;
             visibility: hidden;
@@ -61,6 +64,10 @@ body {
                 top: 0;
                 left: 0;
                 cursor: pointer;
+                .navbar-toggler-icon {
+                    -webkit-filter: opacity(1) drop-shadow(0 0 0 #000);
+                    filter: opacity(1) drop-shadow(0 0 0 #000);
+                }
                 .menu-toggler-nav-active {
                     position: absolute;
                     top: 100%;
@@ -86,7 +93,9 @@ body {
             }
             .menu-main {
                 a {
-                    color: #576574;
+                    color: #000;
+                    font-size: 15px;
+                    font-weight: 500;
                     -webkit-transition: all 0.5s ease;
                     -moz-transition: all 0.5s ease;
                     -o-transition: all 0.5s ease;
@@ -97,7 +106,7 @@ body {
                 margin-left: 40px;
             }
             .menu-main a:hover {
-                color: #ffbe76;
+                color: #d82727;
             }
         }
         .form-inline {
@@ -353,6 +362,7 @@ body {
             font-weight: 500;
             .btnSee {
                 float: right;
+                font-size: 14px;
                 i {
                     color: #9c1320;
                 }
@@ -698,6 +708,7 @@ body {
             color: #535c68;
             font-weight: 500;
             .btnSee {
+                font-size: 14px;
                 float: right;
                 i {
                     color: #9c1320;
@@ -808,6 +819,7 @@ body {
             color: #535c68;
             font-weight: 500;
             .btnSee {
+                font-size: 14px;
                 float: right;
                 i {
                     color: #9c1320;
@@ -2623,6 +2635,12 @@ body {
     }
     .fixed_menu.show {
         display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
     }
 }
 
