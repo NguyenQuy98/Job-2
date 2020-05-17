@@ -191,7 +191,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -35%);
 }
 .bannerHome a .searchForm {
   background: rgba(223, 249, 251, 0.8);
@@ -209,8 +209,8 @@ body {
   padding: 15px;
   text-align: center;
   width: calc(20% - 2px);
-  background: #95afc0;
-  color: #d82727;
+  background: #d82727;
+  color: #fff;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   font-size: 18px;
@@ -1345,25 +1345,8 @@ body {
   margin-top: 15px;
 }
 
-.page-visa .box-3 {
-  margin-top: 20px;
-}
-.page-visa .box-3 .boxContent .dateTimeCountVisa i {
-  margin-right: 10px;
-}
-.page-visa .box-3 .boxContent .box-item-content .avatar .mapName i {
-  background: linear-gradient(#FF6900, #FFB000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.page-visa .box-3 .boxContent .box-item-content .box-desc .box-title a {
-  color: #0056b3;
-}
-.page-visa .box-3 .boxContent .box-item-content .box-desc .box-content .box-price {
-  font-size: 20px;
-  color: #d82727;
-  font-weight: bold;
-  text-align: right;
+.page-visa .box-4 {
+  margin: 55px 0 15px 0;
 }
 .page-visa .box-4 .boxContent .dateTimeCountVisa i {
   margin-right: 10px;
@@ -2064,6 +2047,7 @@ body {
   font-size: 24px;
   font-weight: 500;
   position: relative;
+  text-transform: uppercase;
 }
 .popupAddToCArt .process-wrapper .progress-content-section .section-content .box-content .title-box::after {
   content: "";
@@ -2118,6 +2102,7 @@ body {
   font-size: 24px;
   font-weight: 500;
   position: relative;
+  text-transform: uppercase;
 }
 .popupAddToCArt .process-wrapper .progress-content-section .section-content .formBoxCart .title-box::after {
   content: "";
@@ -2277,12 +2262,18 @@ body {
 .footer .contentFooter .box-center-footer .content-footer {
   text-align: justify;
 }
+.footer .contentFooter .box-center-footer .content-footer .desc {
+  margin-bottom: 15px;
+}
 .footer .contentFooter .box-center-footer .content-footer .box-input-group input {
   border: none;
   padding: 6px 12px;
   vertical-align: top;
   height: 40px;
   width: calc(100% - 43px);
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .footer .contentFooter .box-center-footer .content-footer .box-input-group button {
   height: 40px;
