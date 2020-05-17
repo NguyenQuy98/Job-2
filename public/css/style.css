@@ -266,7 +266,7 @@ body {
 }
 .pageHome .box-2 .txtNameTitel {
   font-size: 20px;
-  color: #535c68;
+  color: #000;
   margin-bottom: 20px;
 }
 .pageHome .box-2 .boxContent {
@@ -327,7 +327,7 @@ body {
   padding-bottom: 5px;
   margin-bottom: 15px;
   font-size: 20px;
-  color: #535c68;
+  color: #000;
   font-weight: 500;
 }
 .pageHome .box-3 .txtNameTitel .btnSee {
@@ -372,6 +372,7 @@ body {
   left: 0;
   padding: 8px 10px;
   background: rgba(52, 74, 113, 0.9);
+  font-size: 14px;
   color: #ffffff;
 }
 .pageHome .box-3 .boxContent .box-item-content .avatar .mapName i {
@@ -409,6 +410,9 @@ body {
   -ms-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
+.pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .textDescBox strong {
+  font-weight: 500;
+}
 .pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .textDescBox.visa {
   width: 100%;
 }
@@ -418,10 +422,14 @@ body {
   right: 0;
   text-align: right;
 }
+.pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .box-right .box-icon {
+  color: #999;
+  font-size: 14px;
+}
 .pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .box-right .box-price {
   font-size: 20px;
   color: #d82727;
-  font-weight: bold;
+  font-weight: 500;
 }
 .pageHome .box-3 .boxContent .box-item-content .ribbon {
   position: absolute;
@@ -432,7 +440,7 @@ body {
 .pageHome .box-3 .boxContent .box-item-content .ribbon .rib {
   background-color: #d82727;
   border-color: #d82727;
-  font-weight: bold;
+  font-weight: 500;
   padding: 4px 10px;
   color: #ffffff;
   position: relative;
@@ -568,6 +576,7 @@ body {
   left: 0;
   padding: 8px 10px;
   background: rgba(52, 74, 113, 0.9);
+  font-size: 14px;
   color: #ffffff;
 }
 .pageHome .box-4 .boxContent .box-item-content .avatar .mapName i {
@@ -606,10 +615,13 @@ body {
   -ms-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
+.pageHome .box-4 .boxContent .box-item-content .box-desc .box-content .textDescBox strong {
+  font-weight: 500;
+}
 .pageHome .box-4 .boxContent .box-item-content .box-desc .box-content .box-price {
   font-size: 20px;
   color: #d82727;
-  font-weight: bold;
+  font-weight: 500;
   margin: 10px 0;
 }
 .pageHome .box-4 .boxContent .box-item-content .box-desc .box-content .box-right {
@@ -617,6 +629,10 @@ body {
   bottom: 0;
   right: 0;
   text-align: right;
+}
+.pageHome .box-4 .boxContent .box-item-content .box-desc .box-content .box-right .box-icon {
+  color: #999;
+  font-size: 14px;
 }
 .pageHome .box-4 .boxContent .box-item-content .ribbon {
   position: absolute;
@@ -627,7 +643,7 @@ body {
 .pageHome .box-4 .boxContent .box-item-content .ribbon .rib {
   background-color: #d82727;
   border-color: #d82727;
-  font-weight: bold;
+  font-weight: 500;
   padding: 4px 10px;
   color: #ffffff;
   position: relative;
@@ -662,7 +678,7 @@ body {
   padding-bottom: 5px;
   margin-bottom: 15px;
   font-size: 20px;
-  color: #535c68;
+  color: #000;
   font-weight: 500;
 }
 .pageHome .box-5 .txtNameTitel .btnSee {
@@ -703,6 +719,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
+  font-size: 14px;
   background: rgba(6, 82, 221, 0.8);
   padding: 10px;
 }
@@ -745,6 +762,7 @@ body {
   left: 0;
   width: 100%;
   background: rgba(6, 82, 221, 0.8);
+  font-size: 14px;
   padding: 10px;
 }
 .pageHome .box-5 .boxContent .box-item-2 .box-item-img .col-6 .box-item-col a .mapName i {
@@ -767,7 +785,7 @@ body {
   padding-bottom: 5px;
   margin-bottom: 15px;
   font-size: 20px;
-  color: #535c68;
+  color: #000;
   font-weight: 500;
 }
 .pageHome .box-6 .txtNameTitel .btnSee {
@@ -1200,7 +1218,7 @@ body {
 .page-warp .box-content .box-content-filter-main .content-boxR .list-tour .item .tour-detail .box-img .ribbon .rib {
   background-color: #d82727;
   border-color: #d82727;
-  font-weight: bold;
+  font-weight: 500;
   padding: 4px 10px;
   color: #ffffff;
   position: relative;
@@ -1325,6 +1343,9 @@ body {
 .pageTourTravel .box-3 .boxContent .box-item-content .box-desc .box-content .textDescBox {
   width: 100%;
 }
+.pageTourTravel .box-3 .boxContent .box-item-content .box-desc .box-content .textDescBox strong {
+  font-weight: 500;
+}
 .pageTourTravel .box-4 .boxContent .row {
   margin: 0 -7.5px;
 }
@@ -1346,7 +1367,7 @@ body {
 .pageTourTravel .box-4 .boxContent .box-item-content .box-price {
   font-size: 20px;
   color: #d82727;
-  font-weight: bold;
+  font-weight: 500;
 }
 .pageTourTravel .box-5 .txtNameTitel span:nth-child(1),
 .pageTourTravel .box-6 .txtNameTitel span:nth-child(1) {
@@ -1365,6 +1386,9 @@ body {
 }
 .page-visa .box-4 .boxContent .box-item-content .box-desc .box-content .textDescBox {
   width: 100%;
+}
+.page-visa .box-4 .boxContent .box-item-content .box-desc .box-content .textDescBox strong {
+  font-weight: 500;
 }
 .page-visa .box-4 .boxContent .box-item-content .box-desc .box-content .box-price {
   text-align: right;
@@ -1768,7 +1792,7 @@ body {
   padding-bottom: 5px;
   margin-bottom: 15px;
   font-size: 30px;
-  color: #535c68;
+  color: #000;
   font-weight: 500;
   position: relative;
 }
@@ -1819,6 +1843,7 @@ body {
   left: 0;
   padding: 8px 10px;
   background: rgba(52, 74, 113, 0.9);
+  font-size: 14px;
   color: #ffffff;
 }
 .pageDetail .box-6 .boxContent .box-item-content .avatar .mapName i {
@@ -1857,6 +1882,9 @@ body {
   -ms-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
+.pageDetail .box-6 .boxContent .box-item-content .box-desc .box-content .textDescBox strong {
+  font-weight: 500;
+}
 .pageDetail .box-6 .boxContent .box-item-content .box-desc .box-content .box-price {
   font-size: 20px;
   color: #d82727;
@@ -1869,6 +1897,10 @@ body {
   right: 0;
   text-align: right;
 }
+.pageDetail .box-6 .boxContent .box-item-content .box-desc .box-content .box-right .box-icon {
+  font-size: 14px;
+  color: #999;
+}
 .pageDetail .box-6 .boxContent .box-item-content .ribbon {
   position: absolute;
   top: 10px;
@@ -1878,7 +1910,7 @@ body {
 .pageDetail .box-6 .boxContent .box-item-content .ribbon .rib {
   background-color: #d82727;
   border-color: #d82727;
-  font-weight: bold;
+  font-weight: 500;
   padding: 4px 10px;
   color: #ffffff;
   position: relative;
@@ -2147,14 +2179,14 @@ body {
 .popupAddToCArt .process-wrapper .progress-content-section .section-content .loadingBox .title {
   margin-bottom: 15px;
   font-size: 30px;
-  color: #535c68;
+  color: #000;
   font-weight: 500;
   position: relative;
 }
 .popupAddToCArt .process-wrapper .progress-content-section .section-content .loadingBox .lodingClass .boxLoading {
   display: inline-block;
   margin-right: 10px;
-  color: #535c68;
+  color: #000;
   font-size: 13px;
   animation: boxLoading 2s linear infinite;
 }
@@ -2232,7 +2264,7 @@ body {
   }
   25%, 75% {
     font-size: 13px;
-    color: #535c68;
+    color: #000;
   }
 }
 @keyframes FadeInUp {
@@ -2661,6 +2693,9 @@ body {
   .pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .textDescBox {
     width: 100%;
   }
+  .pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .textDescBox strong {
+    font-weight: 500;
+  }
   .pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .box-right {
     position: relative;
     text-align: unset;
@@ -2669,6 +2704,8 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
+    font-size: 14px;
+    color: #999;
   }
   .pageHome .box-3 .boxContent .box-item-content .ribbon {
     left: -9px;
