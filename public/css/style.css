@@ -95,6 +95,7 @@ body {
 }
 .header .box-menu .navbar-nav .menu-main a {
   color: #000;
+  text-transform: uppercase;
   font-size: 15px;
   font-weight: 500;
   -webkit-transition: all 0.5s ease;
@@ -204,9 +205,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -25%);
+  top: 30%;
 }
 .bannerHome a .searchForm {
   background: rgba(223, 249, 251, 0.8);
@@ -410,7 +409,7 @@ body {
 }
 .pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .textDescBox {
   width: 80%;
-  color: #636e72;
+  color: #212529;
   overflow: hidden;
   white-space: nowrap;
   -ms-text-overflow: ellipsis;
@@ -615,7 +614,7 @@ body {
 }
 .pageHome .box-4 .boxContent .box-item-content .box-desc .box-content .textDescBox {
   width: 80%;
-  color: #636e72;
+  color: #212529;
   overflow: hidden;
   white-space: nowrap;
   -ms-text-overflow: ellipsis;
@@ -1882,7 +1881,7 @@ body {
 }
 .pageDetail .box-6 .boxContent .box-item-content .box-desc .box-content .textDescBox {
   width: 80%;
-  color: #636e72;
+  color: #212529;
   overflow: hidden;
   white-space: nowrap;
   -ms-text-overflow: ellipsis;
