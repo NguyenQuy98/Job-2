@@ -38,7 +38,7 @@ a:hover {
 }
 
 body {
-  background: #ecf0f5;
+  background: rgba(99, 110, 114, 0.1);
 }
 
 .header .box-menu .navbar {
@@ -51,6 +51,12 @@ body {
 }
 .header .box-menu .navbar-brand {
   margin: auto;
+}
+.header .box-menu .navbar-brand img {
+  max-width: 153px;
+  width: 100%;
+  max-height: 50px;
+  height: 100%;
 }
 .header .box-menu .navbar-nav {
   position: relative;
@@ -200,7 +206,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -35%);
+  transform: translate(-50%, -25%);
 }
 .bannerHome a .searchForm {
   background: rgba(223, 249, 251, 0.8);
@@ -2346,6 +2352,12 @@ body {
 }
 .footer .contentFooter .box-bottom-footer .col-logo {
   text-align: center;
+}
+.footer .contentFooter .box-bottom-footer .col-logo .logoFooter img {
+  max-width: 153px;
+  max-height: 50px;
+  width: 100%;
+  height: 100%;
 }
 .footer .contentFooter .box-bottom-footer .col-logo .vnt-social {
   text-align: center;
