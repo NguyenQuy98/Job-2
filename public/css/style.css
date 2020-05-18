@@ -27,6 +27,7 @@ a {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  color: #636e72;
 }
 
 a:hover {
@@ -263,7 +264,7 @@ body {
   font-size: 18px;
 }
 .pageHome .box-1 .row .item .txtContent .description {
-  color: #718093;
+  color: #636e72;
   text-align: justify;
 }
 .pageHome .box-1 .row .item:nth-child(2) {
