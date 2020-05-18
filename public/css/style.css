@@ -919,8 +919,8 @@ body {
   padding: 15px;
   text-align: center;
   width: calc(20% - 2px);
-  background: #95afc0;
-  color: #d82727;
+  background: #d82727;
+  color: #fff;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   font-size: 18px;
