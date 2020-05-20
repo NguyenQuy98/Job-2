@@ -2377,6 +2377,9 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
+.footer .contentFooter .box-bottom-footer .box-content-footer .content-footer {
+  font-size: 14px;
+}
 .footer .contentFooter .box-bottom-footer .col-logo {
   text-align: center;
 }
