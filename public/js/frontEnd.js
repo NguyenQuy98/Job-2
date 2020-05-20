@@ -167,6 +167,32 @@ var slideInfoD = new Swiper('.slide-infoD', {
     },
 });
 
+var swiperEvaluate = new Swiper('.swiperEvaluate', {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        stopOnLast: true,
+    },
+    // loop: true,
+    // loopFillGroupWithBlank: true,
+
+    breakpoints: {
+        450: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        1020: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+    }
+});
 // page category-----------------------------------------
 $('.box-filter-1').click(function() {
     $(".box-filter-1").toggleClass('collapse');
