@@ -175,10 +175,6 @@ body {
   visibility: visible;
 }
 
-.borderHeader {
-  border-bottom: 1px solid #fff;
-}
-
 .bannerHome {
   position: relative;
   overflow: hidden;

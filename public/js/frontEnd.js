@@ -52,11 +52,11 @@ $(document).ready(function() {
         } else {
             $('#btnGoTop').fadeOut();
         }
-        if ($(this).scrollTop() > 1) {
-            $('#header').addClass('borderHeader');
-        } else {
-            $('#header').removeClass('borderHeader');
-        }
+        // if ($(this).scrollTop() > 1) {
+        //     $('#header').addClass('borderHeader');
+        // } else {
+        //     $('#header').removeClass('borderHeader');
+        // }
     });
     $('#btnGoTop').click(function() {
         // $('#btnGoTop').tooltip('hide', 800);
