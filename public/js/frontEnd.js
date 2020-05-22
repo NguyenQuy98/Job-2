@@ -1,5 +1,6 @@
 // animate
 AOS.init();
+
 // menu----------------------------------------------------
 $('#id-menu-nav-header').click(function() {
     $("#navbarMenu").toggleClass('active-menu-mobile ');
@@ -23,14 +24,16 @@ $(".priceFormat").html(txtPrice + 'vnđ');
 function menuMobile() {
     var windowH_1 = $('.active-menu-mobile').prop('scrollHeight');
     var windowH_2 = $(window).height();
+    var header = $('#header').height();
+
     if (windowH_1 > windowH_2) {
         $('#navbarMenu').css({
             'height': 'max-content',
         });
     }
-
-
-
+    $('header').css({
+        'margin-bottom': header,
+    });
 }
 menuMobile();
 
@@ -43,10 +46,16 @@ $(document).ready(function() {
     });
     // scroll top---------------------------------------------
     $(window).scroll(function() {
+        var header = $('#header');
         if ($(this).scrollTop() > 20) {
             $('#btnGoTop').fadeIn();
         } else {
             $('#btnGoTop').fadeOut();
+        }
+        if ($(this).scrollTop() > 1) {
+            $('#header').addClass('borderHeader');
+        } else {
+            $('#header').removeClass('borderHeader');
         }
     });
     $('#btnGoTop').click(function() {
@@ -59,6 +68,8 @@ $(document).ready(function() {
 
     // $('#btnGoTop').tooltip('show', 800);
 });
+
+
 
 // page home---------------------------------------------
 var swiperHome = new Swiper('.swiperHome', {

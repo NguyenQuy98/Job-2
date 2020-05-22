@@ -41,6 +41,13 @@ body {
   background: #e0e7ef;
 }
 
+.header {
+  background: #e0e7ef;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
 .header .box-menu .navbar {
   padding: 0;
 }
@@ -166,6 +173,10 @@ body {
 .header .box-menu .form-inline .box-support .s-content.active {
   opacity: 1;
   visibility: visible;
+}
+
+.borderHeader {
+  border: 1px solid #fff;
 }
 
 .bannerHome {
@@ -449,6 +460,11 @@ body {
 .pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .textDescBox.visa {
   width: 100%;
 }
+.pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .box-price {
+  font-size: 20px;
+  color: #d82727;
+  font-weight: 500;
+}
 .pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .box-right {
   position: absolute;
   bottom: 0;
@@ -458,11 +474,6 @@ body {
 .pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .box-right .box-icon {
   color: #212529;
   font-size: 14px;
-}
-.pageHome .box-3 .boxContent .box-item-content .box-desc .box-content .box-right .box-price {
-  font-size: 20px;
-  color: #d82727;
-  font-weight: 500;
 }
 .pageHome .box-3 .boxContent .box-item-content .ribbon {
   position: absolute;
@@ -1458,7 +1469,7 @@ body {
   margin: 20px 0;
 }
 .pageDetail .box-content-detail-main .fl-col-4 {
-  width: calc(40% - 15px);
+  width: calc(30% - 15px);
   display: inline-block;
   margin-left: 15px;
   float: right;
@@ -1603,7 +1614,7 @@ body {
   border-color: #ccc;
 }
 .pageDetail .box-content-detail-main .fr-col-8 {
-  width: 60%;
+  width: 70%;
   display: inline-block;
   float: left;
   overflow: auto;
@@ -1678,7 +1689,7 @@ body {
   text-decoration: none;
   padding: 10px 15px;
   position: relative;
-  margin-bottom: 0;
+  margin-bottom: -1px;
   text-transform: uppercase;
   font-weight: bold;
   border: none;
