@@ -571,10 +571,10 @@ body {
                 align-items: center;
             }
             .next_item {
-                right: -10px;
+                right: 10px;
             }
             .prev_item {
-                left: -10px;
+                left: 10px;
             }
             .prev_item:hover,
             .next_item:hover,
@@ -584,10 +584,10 @@ body {
                 color: #fff;
             }
             .next_visa {
-                right: -10px;
+                right: 10px;
             }
             .prev_visa {
-                left: -10px;
+                left: 10px;
             }
         }
     }
@@ -982,10 +982,10 @@ body {
                 align-items: center;
             }
             .next_blog {
-                right: -20px;
+                right: 0px;
             }
             .prev_blog {
-                left: -20px;
+                left: 0px;
             }
             .prev_blog:hover,
             .next_blog:hover {
@@ -1812,10 +1812,10 @@ body {
                     }
                 }
                 .next_infoD {
-                    right: 15px;
+                    right: 10px;
                 }
                 .prev_infoD {
-                    left: 15px;
+                    left: 10px;
                 }
                 .btnInfo {
                     position: absolute;
@@ -2209,10 +2209,10 @@ body {
                 align-items: center;
             }
             .next_blog {
-                right: -20px;
+                right: 0px;
             }
             .prev_blog {
-                left: -20px;
+                left: 0px;
             }
             .prev_blog:hover,
             .next_blog:hover {
@@ -2854,11 +2854,11 @@ body {
                 }
                 .box-item-content {
                     .ribbon {
-                        left: -10px;
+                        left: 10px;
                     }
                 }
                 .prev_item {
-                    left: -10px;
+                    left: 10px;
                 }
             }
         }
@@ -3099,7 +3099,6 @@ body {
             .boxContent {
                 .item {
                     margin-bottom: 10px;
-                    padding: 0;
                     .box-item {
                         .description {
                             .nameProduct {
@@ -3145,13 +3144,13 @@ body {
                     }
                 }
                 .prev_item {
-                    left: 0;
+                    left: 10px;
                 }
                 .next_visa {
-                    right: -5px;
+                    right: 10px;
                 }
                 .prev_visa {
-                    left: -5px;
+                    left: 10px;
                 }
                 // .next_item {
                 //     right: -15px;
@@ -3211,10 +3210,10 @@ body {
         .box-6 {
             .boxContent {
                 .prev_blog {
-                    left: -10px;
+                    left: 0px;
                 }
                 .next_blog {
-                    right: -15px;
+                    right: 0px;
                 }
             }
         }
@@ -3223,7 +3222,7 @@ body {
         .box-3 {
             .boxContent {
                 .next_item {
-                    right: -5px;
+                    right: 10px;
                 }
             }
         }
@@ -3290,10 +3289,10 @@ body {
         .box-6 {
             .boxContent {
                 .prev_blog {
-                    left: -10px;
+                    left: 0px;
                 }
                 .next_blog {
-                    right: -15px;
+                    right: 0px;
                 }
             }
         }

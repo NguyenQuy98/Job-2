@@ -533,10 +533,10 @@ body {
   align-items: center;
 }
 .pageHome .box-3 .boxContent .next_item {
-  right: -10px;
+  right: 10px;
 }
 .pageHome .box-3 .boxContent .prev_item {
-  left: -10px;
+  left: 10px;
 }
 .pageHome .box-3 .boxContent .prev_item:hover,
 .pageHome .box-3 .boxContent .next_item:hover,
@@ -546,10 +546,10 @@ body {
   color: #fff;
 }
 .pageHome .box-3 .boxContent .next_visa {
-  right: -10px;
+  right: 10px;
 }
 .pageHome .box-3 .boxContent .prev_visa {
-  left: -10px;
+  left: 10px;
 }
 .pageHome .box-4 .txtNameTitel {
   margin-bottom: 20px;
@@ -926,10 +926,10 @@ body {
   align-items: center;
 }
 .pageHome .box-6 .boxContent .next_blog {
-  right: -20px;
+  right: 0px;
 }
 .pageHome .box-6 .boxContent .prev_blog {
-  left: -20px;
+  left: 0px;
 }
 .pageHome .box-6 .boxContent .prev_blog:hover,
 .pageHome .box-6 .boxContent .next_blog:hover {
@@ -1637,10 +1637,10 @@ body {
   transform: scale(1);
 }
 .pageDetail .box-content-detail-main .fr-col-8 .swiper-container .next_infoD {
-  right: 15px;
+  right: 10px;
 }
 .pageDetail .box-content-detail-main .fr-col-8 .swiper-container .prev_infoD {
-  left: 15px;
+  left: 10px;
 }
 .pageDetail .box-content-detail-main .fr-col-8 .swiper-container .btnInfo {
   position: absolute;
@@ -2006,10 +2006,10 @@ body {
   align-items: center;
 }
 .pageDetail .box-6 .boxContent .next_blog {
-  right: -20px;
+  right: 0px;
 }
 .pageDetail .box-6 .boxContent .prev_blog {
-  left: -20px;
+  left: 0px;
 }
 .pageDetail .box-6 .boxContent .prev_blog:hover,
 .pageDetail .box-6 .boxContent .next_blog:hover {
@@ -2565,10 +2565,10 @@ body {
     padding-left: 10px;
   }
   .pageHome .box-3 .boxContent .box-item-content .ribbon {
-    left: -10px;
+    left: 10px;
   }
   .pageHome .box-3 .boxContent .prev_item {
-    left: -10px;
+    left: 10px;
   }
   .pageHome .box-2 .boxContent {
     margin-bottom: 0;
@@ -2721,7 +2721,6 @@ body {
 
   .pageHome .box-2 .boxContent .item {
     margin-bottom: 10px;
-    padding: 0;
   }
   .pageHome .box-2 .boxContent .item .box-item .description .nameProduct {
     overflow: hidden;
@@ -2754,13 +2753,13 @@ body {
     left: -9px;
   }
   .pageHome .box-3 .boxContent .prev_item {
-    left: 0;
+    left: 10px;
   }
   .pageHome .box-3 .boxContent .next_visa {
-    right: -5px;
+    right: 10px;
   }
   .pageHome .box-3 .boxContent .prev_visa {
-    left: -5px;
+    left: 10px;
   }
   .pageHome .box-4 .txtNameTitel {
     margin-top: 15px;
@@ -2793,14 +2792,14 @@ body {
     margin-top: 15px;
   }
   .pageHome .box-6 .boxContent .prev_blog {
-    left: -10px;
+    left: 0px;
   }
   .pageHome .box-6 .boxContent .next_blog {
-    right: -15px;
+    right: 0px;
   }
 
   .pageTourTravel .box-3 .boxContent .next_item {
-    right: -5px;
+    right: 10px;
   }
   .pageTourTravel .box-4 .boxContent .row .col-md-6.colBox {
     padding: 0;
@@ -2835,10 +2834,10 @@ body {
   }
 
   .pageDetail .box-6 .boxContent .prev_blog {
-    left: -10px;
+    left: 0px;
   }
   .pageDetail .box-6 .boxContent .next_blog {
-    right: -15px;
+    right: 0px;
   }
 
   .footer {
