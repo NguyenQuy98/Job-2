@@ -162,7 +162,7 @@
                                 </div>
 
                                 <div class="bdt-item">
-                                    <a href="javascript:void(0)" class="book-tour" data-toggle="modal" data-target="#AddTocart">
+                                    <a href="javascript:void(0)" class="book-tour">
                                         <i class="fa fa-shopping-cart"></i> Đặt ngay
                                     </a>
                                 </div>
@@ -532,148 +532,7 @@
         </div>
         </div>
     </section>
-    <section>
-        <div class="modal fade popupAddToCArt" id="AddTocart" tabindex="-1" role="dialog" aria-labelledby="AddTocartLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <button type="button" class="close btnCloseModal" data-dismiss="modal" aria-label="Close">
-                        Đóng
-                    </button>
-                    <div class="process-wrapper">
-                        <div id="progress-bar-container" class="progress-bar-container">
-                            <ul>
-                                <li class="step step01 active">
-                                    <div class="step-inner"><i class="fas fa-check-circle"></i> <span>1 Đơn đặt tour</span></div>
-                                </li>
-                                <li class="step step02">
-                                    <div class="step-inner"><i class="fas fa-check-circle"></i> <span>2 Thông tin đơn hàng</span></div>
-                                </li>
-                                <li class="step step03">
-                                    <div class="step-inner"><i class="fas fa-check-circle"></i> <span>3 Hoàn tất</span></div>
-                                </li>
-                            </ul>
 
-                            <div id="line">
-                                <div id="line-progress"></div>
-                            </div>
-                        </div>
-                        <div id="progress-content-section" class="progress-content-section">
-                            <div class="section-content discovery active">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="box-content">
-                                            <div class="title-box">
-                                                Đơn đã chọn
-                                            </div>
-                                            <div class="box-item-product">
-                                                <div class="row m-0">
-                                                    <div class="col-lg-4 col-md-4 imgBox p-0">
-                                                        <img src="public/images/phu-quoc580x220.jpg" alt="">
-                                                    </div>
-                                                    <div class="col-lg-8 col-md-8">
-                                                        <div class="name">
-                                                            HCM - Phú Quốc - Câu Cá - Lặn Ngắm San Hô 3N Bay Vietjet Air
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="box-price">
-                                                <div class="name">Tổng cộng</div>
-                                                <div class="price priceFormat">4790000vnd</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-md-12">
-                                        <div class="formBoxCart">
-                                            <form action="">
-                                                <div class="title-box">
-                                                    Thông tin liên hệ
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="txtFullName">Họ và tên</label>
-                                                    <input type="text" class="form-control" id="txtFullName" placeholder="Họ và tên.....">
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="form-group col-md-6">
-                                                        <label for="txtPhone">Số điện thoại</label>
-                                                        <input type="text" class="form-control" id="txtPhone" placeholder="Số điện thoại.....">
-                                                    </div>
-                                                    <div class="form-group col-md-6">
-                                                        <label for="txtEmail">Password</label>
-                                                        <input type="email" class="form-control" id="txtEmail" placeholder="Email.....">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="txtAddress">Địa chỉ</label>
-                                                    <input type="text" class="form-control" id="txtAddress" placeholder="Địa chỉ.....">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="txtNote">Ghi chú</label>
-                                                    <textarea name="txtNote" id="txtNote" class="form-control"></textarea>
-                                                </div>
-                                                <div class="form-group text-right">
-                                                    <button type="submit" id="btnCheckout" name="btnCheckout" class="btnSubmit">
-                                                        <span>Xác nhận</span>
-                                                    </button>
-                                                </div>
-
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="section-content strategy">
-                                <div class="loadingBox">
-                                    <div class="title">
-                                        Đơn hàng đang xử lý
-                                    </div>
-                                    <div class="lodingClass">
-                                        <div class="boxLoading"><i class="fas fa-circle"></i></div>
-                                        <div class="boxLoading"><i class="fas fa-circle"></i></div>
-                                        <div class="boxLoading"><i class="fas fa-circle"></i></div>
-                                        <div class="boxLoading"><i class="fas fa-circle"></i></div>
-                                        <div class="boxLoading"><i class="fas fa-circle"></i></div>
-                                        <div class="boxLoading"><i class="fas fa-circle"></i></div>
-                                        <div class="boxLoading"><i class="fas fa-circle"></i></div>
-                                        <div class="boxLoading"><i class="fas fa-circle"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="section-content creative">
-                                <div class="orderBox">
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <div class="successBox">
-                                                <div class="title">
-                                                    ĐẶT TOUR THÀNH CÔNG
-                                                </div>
-                                                <div class="desc">
-                                                    <div class="title-desc">Cám ơn bạn đã đặt tour tại ........</div>
-                                                    <div class="name-desc">Đơn hàng của bạn đang được xử lý</div>
-                                                    <div class="box-item">
-                                                        <span>Mã số đơn hàng của bạn là:</span>
-                                                        <span> DLVN2020051224</span>
-                                                    </div>
-                                                    <p>Nhân viên của chúng tôi sẽ liên hệ với Quý khách trong thời gian sớm nhất. Nếu có thắc mắc, Quý khách vui lòng liên hệ qua số hotline <a href="#"><b>1900 1583</b></a> Xin chân thành cảm ơn quý khách
-                                                        hàng !</p>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="logoSuccess"><img src="public/images/successOrder.png" alt=""></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer>
         <div class="footer">
             <div class="contentFooter">

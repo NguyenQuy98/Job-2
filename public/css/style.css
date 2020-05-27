@@ -2017,108 +2017,74 @@ body {
   color: #fff;
 }
 
-.popupAddToCArt .modal-dialog {
-  max-width: 100%;
-  width: 90%;
-  margin: auto;
+.AddToCArt {
+  padding-bottom: 30px;
+  margin-bottom: 25px;
+  background: #fff;
 }
-.popupAddToCArt .modal-dialog .btnCloseModal {
-  display: none;
+.AddToCArt .bg-step {
+  padding: 20px 0;
+  background: #eeeeee;
 }
-.popupAddToCArt .process-wrapper {
-  margin: auto;
-  padding: 15px;
-  width: 100%;
-}
-.popupAddToCArt .process-wrapper .progress-bar-container {
-  position: relative;
-  width: 100%;
-  margin: auto;
-  height: 100px;
-}
-.popupAddToCArt .process-wrapper .progress-bar-container ul {
-  padding: 0;
-  margin: 0;
-  padding-top: 15px;
-  z-index: 9999;
-  position: absolute;
-  width: 100%;
-  margin-top: -40px;
-}
-.popupAddToCArt .process-wrapper .progress-bar-container ul li {
-  list-style: none;
-  float: left;
-  width: 20%;
-  text-align: center;
-  color: #212529;
-  text-transform: uppercase;
-  font-size: 11px;
-  cursor: pointer;
-  font-weight: 700;
-  transition: all ease 0.2s;
-  vertical-align: bottom;
-  height: 60px;
-  position: relative;
-}
-.popupAddToCArt .process-wrapper .progress-bar-container ul li .step-inner {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  font-size: 14px;
-}
-.popupAddToCArt .process-wrapper .progress-bar-container ul li i {
-  opacity: 0;
-  transition: all ease 0.2s;
-}
-.popupAddToCArt .process-wrapper .progress-bar-container ul li.active,
-.popupAddToCArt .process-wrapper .progress-bar-container ul li:hover {
+.AddToCArt .bg-step ul li.active {
   color: #d82727;
 }
-.popupAddToCArt .process-wrapper .progress-bar-container ul li.active i,
-.popupAddToCArt .process-wrapper .progress-bar-container ul li:hover i {
-  opacity: 1;
+.AddToCArt .bg-step ul li.active i.icheck {
+  display: inline-block;
+  color: #d82727;
+  border: none;
+  font-size: 29px;
+  border-radius: 0;
 }
-.popupAddToCArt .process-wrapper .progress-bar-container ul li:hover:after {
-  background: #555;
+.AddToCArt .bg-step ul li.active i {
+  display: none;
 }
-.popupAddToCArt .process-wrapper .progress-bar-container #line {
-  width: 40%;
-  margin: auto;
-  background: #eee;
-  height: 6px;
-  position: absolute;
-  left: 10%;
-  top: 57px;
-  z-index: 1;
+.AddToCArt .bg-step ul li {
+  margin-right: 40px;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+}
+.AddToCArt .bg-step ul li span {
+  font-size: 16px;
+  margin-right: 2px;
+}
+.AddToCArt .bg-step ul li i.icheck {
+  display: none;
+}
+.AddToCArt .bg-step ul li i {
+  color: #fff;
+  border: 2px solid #ccc;
   border-radius: 50px;
-  transition: all ease 0.9s;
+  font-size: 23px;
+  vertical-align: middle;
+  margin-right: 5px;
 }
-.popupAddToCArt .process-wrapper .progress-bar-container #line-progress {
-  content: " ";
-  width: 3%;
-  height: 100%;
-  background: #207893;
-  background: linear-gradient(to right, #207893 0%, #2ea3b7 100%);
+.AddToCArt .bg-step ul li:after {
   position: absolute;
-  z-index: 2;
-  border-radius: 50px;
-  transition: all ease 0.9s;
+  width: 30px;
+  height: 2px;
+  content: "";
+  top: 50%;
+  margin-top: -1px;
+  right: -35px;
+  background: #dddddd;
 }
-.popupAddToCArt .process-wrapper .progress-content-section {
+.AddToCArt .bg-step ul li:nth-last-child(1):after {
+  width: 0px;
+  height: 0px;
+}
+.AddToCArt .bg-main {
   width: 100%;
   margin: auto;
   border-radius: 4px;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content {
+.AddToCArt .bg-main .section-content {
   padding: 30px 40px;
   text-align: center;
   display: none;
-  animation: FadeInUp 700ms ease 1;
-  animation-fill-mode: forwards;
-  transform: translateY(15px);
-  opacity: 0;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .box-content {
+.AddToCArt .bg-main .section-content .box-content {
   position: relative;
   padding: 15px;
   border: 1px solid #dddddd;
@@ -2126,14 +2092,14 @@ body {
   -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .box-content .title-box {
+.AddToCArt .bg-main .section-content .box-content .title-box {
   text-align: left;
   font-size: 24px;
   font-weight: 500;
   position: relative;
   text-transform: uppercase;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .box-content .title-box::after {
+.AddToCArt .bg-main .section-content .box-content .title-box::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -2142,29 +2108,29 @@ body {
   background: #d82727;
   height: 2px;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .box-content .box-item-product {
+.AddToCArt .bg-main .section-content .box-content .box-item-product {
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
   margin: 15px 0;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .box-content .box-item-product .imgBox img {
+.AddToCArt .bg-main .section-content .box-content .box-item-product .imgBox img {
   width: 100%;
   height: 100%;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .box-content .box-item-product .name {
+.AddToCArt .bg-main .section-content .box-content .box-item-product .name {
   padding: 5px 0;
   font-size: 18px;
   text-align: left;
   font-weight: 500;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .box-content .box-price .name {
+.AddToCArt .bg-main .section-content .box-content .box-price .name {
   display: inline-block;
   white-space: nowrap;
   width: calc(50% - 2px);
   text-align: left;
   font-size: 20px;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .box-content .box-price .price {
+.AddToCArt .bg-main .section-content .box-content .box-price .price {
   white-space: nowrap;
   display: inline-block;
   width: calc(50% - 3px);
@@ -2172,7 +2138,7 @@ body {
   font-size: 18px;
   color: #fbac09;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .formBoxCart {
+.AddToCArt .bg-main .section-content .formBoxCart {
   position: relative;
   padding: 15px;
   border: 1px solid #dddddd;
@@ -2181,14 +2147,14 @@ body {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
   text-align: left;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .formBoxCart .title-box {
+.AddToCArt .bg-main .section-content .formBoxCart .title-box {
   text-align: left;
   font-size: 24px;
   font-weight: 500;
   position: relative;
   text-transform: uppercase;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .formBoxCart .title-box::after {
+.AddToCArt .bg-main .section-content .formBoxCart .title-box::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -2197,7 +2163,7 @@ body {
   background: #d82727;
   height: 2px;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .formBoxCart .btnSubmit {
+.AddToCArt .bg-main .section-content .formBoxCart .btnSubmit {
   background: #d82727;
   color: #ffffff;
   border: 0;
@@ -2212,49 +2178,19 @@ body {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .formBoxCart .btnSubmit:hover {
+.AddToCArt .bg-main .section-content .formBoxCart .btnSubmit:hover {
   background: #212529;
   color: #ffffff;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .loadingBox .title {
+.AddToCArt .bg-main .section-content .loadingBox .title {
   margin-bottom: 15px;
   font-size: 30px;
   color: #000;
   font-weight: 500;
   position: relative;
+  text-align: left;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .loadingBox .lodingClass .boxLoading {
-  display: inline-block;
-  margin-right: 10px;
-  color: #000;
-  font-size: 13px;
-  animation: boxLoading 2s linear infinite;
-}
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .loadingBox .lodingClass .boxLoading:nth-child(1) {
-  animation-delay: 0s;
-}
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .loadingBox .lodingClass .boxLoading:nth-child(2) {
-  animation-delay: 0.1s;
-}
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .loadingBox .lodingClass .boxLoading:nth-child(3) {
-  animation-delay: 0.2s;
-}
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .loadingBox .lodingClass .boxLoading:nth-child(4) {
-  animation-delay: 0.3s;
-}
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .loadingBox .lodingClass .boxLoading:nth-child(5) {
-  animation-delay: 0.4s;
-}
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .loadingBox .lodingClass .boxLoading:nth-child(6) {
-  animation-delay: 0.5s;
-}
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .loadingBox .lodingClass .boxLoading:nth-child(7) {
-  animation-delay: 0.6s;
-}
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .loadingBox .lodingClass .boxLoading:nth-child(8) {
-  animation-delay: 0.7s;
-}
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .orderBox {
+.AddToCArt .bg-main .section-content .orderBox {
   position: relative;
   padding: 15px;
   border: 1px solid #dddddd;
@@ -2262,38 +2198,38 @@ body {
   -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .orderBox .successBox {
+.AddToCArt .bg-main .section-content .orderBox .successBox {
   font-size: 30px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .orderBox .successBox .desc .title-desc {
+.AddToCArt .bg-main .section-content .orderBox .successBox .desc .title-desc {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 10px;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .orderBox .successBox .desc .name-desc {
+.AddToCArt .bg-main .section-content .orderBox .successBox .desc .name-desc {
   font-size: 18px;
   padding: 10px 10px;
   background: #344a71;
   color: #ffffff;
   margin-bottom: 20px;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .orderBox .successBox .desc .box-item {
+.AddToCArt .bg-main .section-content .orderBox .successBox .desc .box-item {
   font-size: 16px;
   padding: 10px 10px;
   color: #ffffff;
   background: #d82727;
   margin-bottom: 20px;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .orderBox .successBox .desc p {
+.AddToCArt .bg-main .section-content .orderBox .successBox .desc p {
   font-size: 13px;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content .orderBox .logoSuccess img {
+.AddToCArt .bg-main .section-content .orderBox .logoSuccess img {
   width: 100%;
   height: 100%;
 }
-.popupAddToCArt .process-wrapper .progress-content-section .section-content.active {
+.AddToCArt .bg-main .section-content.active {
   display: block;
 }
 
@@ -2809,19 +2745,31 @@ body {
     font-size: 20px;
   }
 
-  .popupAddToCArt .modal-dialog {
-    width: 100%;
+  .AddToCArt .bg-step ul li {
+    display: inline-block;
+    position: relative;
+    width: 32.33333%;
+    font-size: 12px;
+    padding: 35px 10px 0 10px;
+    margin-right: 0;
+    text-align: center;
+    vertical-align: top;
   }
-  .popupAddToCArt .modal-dialog .btnCloseModal {
+  .AddToCArt .bg-step ul li i {
+    position: relative;
+    z-index: 2;
+  }
+  .AddToCArt .bg-step ul li span {
     display: block;
-    height: 65px;
-    font-size: 18px;
-    background: #d82727;
-    opacity: 1;
-    color: #fff;
   }
-  .popupAddToCArt .process-wrapper .progress-content-section .section-content {
-    padding: 15px 0;
+  .AddToCArt .bg-step ul li:after {
+    width: 100%;
+    top: 45%;
+    right: -55px;
+    z-index: 1;
+  }
+  .AddToCArt .bg-main .section-content {
+    padding: 30px 0;
   }
 
   .page-warp .box-content .box-content-filter-main .content-boxR .list-tour .item .tour-detail .box-img,
@@ -2921,23 +2869,14 @@ body {
     padding: 5px 10px;
   }
 
-  .popupAddToCArt .process-wrapper .progress-bar-container {
-    height: max-content;
-    padding-bottom: 25px;
+  .AddToCArt .bg-step {
+    text-align: center;
   }
-  .popupAddToCArt .process-wrapper .progress-bar-container ul {
-    position: relative;
-    margin-top: 0;
+  .AddToCArt .bg-step ul li {
+    width: 32%;
   }
-  .popupAddToCArt .process-wrapper .progress-bar-container ul li {
-    width: 100%;
-    float: none;
-    height: 20px;
-    text-align: left;
-  }
-  .popupAddToCArt .process-wrapper .progress-bar-container #line {
-    width: 80%;
-    top: 90%;
+  .AddToCArt .bg-step ul li:after {
+    top: 50px;
   }
 }
 

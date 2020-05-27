@@ -239,22 +239,16 @@ $(".content-info .btn-close").click(function() {
 
 
 // popup đặt hàng---------------------------------
-$(".step").click(function() {
-    $(this).addClass("active").prevAll().addClass("active");
-    $(this).nextAll().removeClass("active");
-});
+$("#btnCheckout").click(function() {
+    $('#box-content-cart .strategy').addClass("active");
+    $('#nav-tab-cart .box2').addClass("active");
 
-$(".step01").click(function() {
-    $("#line-progress").css("width", "3%");
-    $(".discovery").addClass("active").siblings().removeClass("active");
-});
+    $('#box-content-cart .discovery').removeClass("active");
 
-$(".step02").click(function() {
-    $("#line-progress").css("width", "50%");
-    $(".strategy").addClass("active").siblings().removeClass("active");
-});
-
-$(".step03").click(function() {
-    $("#line-progress").css("width", "100%");
-    $(".creative").addClass("active").siblings().removeClass("active");
+    setTimeout(function() {
+        $('#nav-tab-cart .box3').addClass("active");
+        $('#box-content-cart .creative').addClass("active");
+        $('#box-content-cart .strategy').removeClass("active");
+        $('#box-content-cart .discovery').removeClass("active");
+    }, 3000);
 });
